@@ -1,0 +1,32 @@
+(class student:
+
+def__init__(self):
+  self.name = "vyshnavi"    # public
+  self._branch = "AIML"     # protected
+  self.__marks = 90         # private
+
+def get_marks(self):
+     return self.__marks
+
+def set_marks(self,marks):
+     self.__marks = marks
+
+
+student = student()
+
+# public
+print("public Name:", student.name)
+
+# protected
+print("protected Branch:", student._branch)
+
+# private through getter
+print("private Marks:", student.get_marks())
+
+# private through setter
+student.set_marks(95)
+
+print("Updated Marks:", student.get_marks())
+
+
+
